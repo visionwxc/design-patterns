@@ -1,0 +1,24 @@
+spring:
+  mvc:
+    async:
+      request-timeout: -1ms
+  application:
+    name: dpd-demo
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    serialization.indent_output: true
+    parser:
+      ALLOW_UNQUOTED_CONTROL_CHARS: true
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  session:
+    store-type: redis
+server:
+  port: 8001
+
+
+
+
+info:
+  name: design patterns
+  desc: this is a study project for design patterns
